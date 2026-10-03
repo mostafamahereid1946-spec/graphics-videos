@@ -1,0 +1,12 @@
+node_modules/
+out/qa/
+out/archive/
+out/*.png
+audio/build/stems/
+__pycache__/
+*.pyc
+.DS_Store
+# regenerable audio stems (npm run audio); mix.wav is kept because the render needs it
+public/audio/vo.wav
+public/audio/music.wav
+public/audio/sfx.wav

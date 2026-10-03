@@ -1,0 +1,34 @@
+{
+  "name": "corevia-reels-ad",
+  "version": "1.0.0",
+  "private": true,
+  "description": "COREVIA — Meta Reels ad (1080x1920, 30fps) built with Remotion",
+  "scripts": {
+    "studio": "remotion studio",
+    "typecheck": "tsc --noEmit",
+    "audio": "python3 audio/build_vo.py && python3 audio/music.py && python3 audio/sfx.py && python3 audio/mix.py",
+    "render": "remotion render CoreviaReel out/corevia-reel-v2.mp4",
+    "qa": "node scripts/qa-stills.mjs SafeZoneQA 0 2.3 7.4 12.6 16.3 20.8 25.4 29.6 31.7 35.4 39.5"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.532",
+    "@remotion/fonts": "4.0.532",
+    "@remotion/media-utils": "4.0.532",
+    "@remotion/noise": "4.0.532",
+    "@remotion/paths": "4.0.532",
+    "@remotion/transitions": "4.0.532",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.532"
+  },
+  "devDependencies": {
+    "@fontsource/alexandria": "5.3.0",
+    "@fontsource/aref-ruqaa": "^5.3.0",
+    "@fontsource/cairo": "5.3.0",
+    "@fontsource/dm-mono": "5.3.0",
+    "@fontsource/outfit": "5.3.0",
+    "@fontsource/readex-pro": "5.3.0",
+    "@types/react": "19.1.8",
+    "typescript": "5.8.3"
+  }
+}

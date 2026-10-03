@@ -1,0 +1,55 @@
+{
+  "_doc": "Single source of truth for the voice-over. `src` = [start, end] seconds in the raw recording (best take, chosen after Whisper transcription + energy analysis). `tokens` = caption words as actually spoken; `say` overrides the text used to estimate spoken length; `em` = highlight word. `snap` = musical grid the line start is quantised to; `gap` = minimum silence before the line (s).",
+  "recording": "audio/source/voice-take-2026-10-03.mp3",
+  "bpm": 120,
+  "fps": 30,
+  "lines": [
+    {"id": "hook", "scene": "hook", "src": [1.85, 4.24], "snap": "8th", "at": 0.25,
+     "tokens": [{"t": "محتاج"}, {"t": "ريلز"}, {"t": "تشدّ", "em": true}, {"t": "الناس"}, {"t": "لمشروعك؟"}]},
+
+    {"id": "p1", "scene": "problem", "src": [5.64, 6.85], "snap": "beat", "gap": 0.35,
+     "tokens": [{"t": "يعني"}, {"t": "محتاج"}, {"t": "مونتير", "em": true}]},
+    {"id": "p2", "scene": "problem", "src": [7.12, 8.85], "snap": "8th", "gap": 0.14,
+     "tokens": [{"t": "ومصمّم"}, {"t": "موشن", "em": true}, {"t": "جرافيك", "em": true}]},
+    {"id": "p3", "scene": "problem", "src": [9.20, 10.285], "snap": "8th", "gap": 0.12, "fadeOut": 0.012, "post": 0.0,
+     "tokens": [{"t": "وحدّ"}, {"t": "للكابشن", "em": true}]},
+    {"id": "p4", "scene": "problem", "src": [10.285, 11.44], "snap": "8th", "gap": 0.12, "pre": 0.0, "fadeIn": 0.006,
+     "tokens": [{"t": "وحدّ"}, {"t": "للصوت", "em": true}]},
+    {"id": "p5", "scene": "problem", "src": [11.67, 12.63], "snap": "beat", "gap": 0.22,
+     "tokens": [{"t": "ده"}, {"t": "فريق", "em": true}, {"t": "كامل!", "em": true}]},
+
+    {"id": "s1", "scene": "solution", "src": [20.33, 21.16], "snap": "beat", "gap": 0.40,
+     "tokens": [{"t": "مع"}, {"t": "COREVIA", "say": "كورفيا", "em": true, "brand": true}]},
+    {"id": "s2a", "scene": "solution", "src": [21.41, 22.68], "snap": "8th", "gap": 0.16,
+     "tokens": [{"t": "الفريق"}, {"t": "ده"}, {"t": "كلّه", "em": true}]},
+    {"id": "s2b", "scene": "solution", "src": [25.62, 27.10], "snap": "8th", "gap": 0.14, "_take": "take 2 of 2 (take 1 at 23.17-24.52 stops before 'واحدة')",
+     "tokens": [{"t": "في"}, {"t": "باقة"}, {"t": "شهرية"}, {"t": "واحدة!", "em": true}]},
+
+    {"id": "r1", "scene": "services", "src": [28.88, 29.93], "snap": "bar", "gap": 0.35,
+     "tokens": [{"t": "مونتاج"}, {"t": "احترافي", "em": true}]},
+    {"id": "r2", "scene": "services", "src": [30.09, 31.09], "snap": "beat", "gap": 0.20,
+     "tokens": [{"t": "موشن"}, {"t": "جرافيك", "em": true}]},
+    {"id": "r3", "scene": "services", "src": [31.46, 32.785], "snap": "beat", "gap": 0.20, "post": 0.0, "fadeOut": 0.012,
+     "tokens": [{"t": "كابشن"}, {"t": "متحرك", "em": true}]},
+    {"id": "r4", "scene": "services", "src": [32.785, 34.30], "snap": "beat", "gap": 0.20, "pre": 0.0,
+     "tokens": [{"t": "إيموجي"}, {"t": "متخصص", "em": true}, {"t": "لك"}]},
+    {"id": "r5", "scene": "services", "src": [34.555, 35.82], "snap": "beat", "gap": 0.20,
+     "tokens": [{"t": "ومؤثرات"}, {"t": "صوتية", "em": true}]},
+
+    {"id": "c1", "scene": "consistency", "src": [43.45, 46.43], "snap": "beat", "gap": 0.45,
+     "tokens": [{"t": "من"}, {"t": "10", "say": "عشرة", "num": true}, {"t": "لـ 12", "say": "لاتناشر", "num": true, "em": true}, {"t": "ريل"}, {"t": "كل"}, {"t": "شهر"}]},
+    {"id": "c2", "scene": "consistency", "src": [46.78, 48.65], "snap": "8th", "gap": 0.20,
+     "tokens": [{"t": "يعني"}, {"t": "محتوى"}, {"t": "ثابت", "em": true}, {"t": "كل"}, {"t": "أسبوع"}]},
+
+    {"id": "k1", "scene": "punch", "src": [50.68, 51.50], "snap": "bar", "gap": 0.50, "post": 0.0, "fadeOut": 0.035, "throw": true,
+     "tokens": [{"t": "عايز"}, {"t": "إيه"}, {"t": "تاني؟!", "em": true}]},
+    {"id": "k2", "scene": "punch", "src": [51.50, 53.49], "snap": "beat", "gap": 0.55, "pre": 0.0, "fadeIn": 0.008,
+     "tokens": [{"t": "ريّح"}, {"t": "دماغك…"}, {"t": "وسيب"}, {"t": "الريلز"}, {"t": "علينا", "em": true}]},
+
+    {"id": "a1", "scene": "cta", "src": [55.84, 59.52], "snap": "beat", "gap": 0.45, "_note": "'دلوقتي وخلّي' is fully coarticulated, so a1+a2 stay one continuous take",
+     "tokens": [{"t": "ابعتلنا", "em": true}, {"t": "رسالة", "em": true}, {"t": "دلوقتي…"}, {"t": "وخلّي", "lineBreak": true}, {"t": "محتواك"}, {"t": "يتكلّم"}, {"t": "عنك"}]},
+    {"id": "a3", "scene": "logo", "src": [60.27, 60.81], "snap": "beat", "gap": 0.35,
+     "tokens": [{"t": "COREVIA", "say": "كورفيا", "em": true, "brand": true}]}
+  ],
+  "outroHold": 2.6
+}
