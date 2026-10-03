@@ -1,7 +1,6 @@
 node_modules/
 out/qa/
 out/archive/
-out/*.png
 audio/build/stems/
 __pycache__/
 *.pyc
